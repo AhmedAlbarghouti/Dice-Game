@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/index.css" rel="stylesheet" />
+    <title>Ahmed's Dice Game</title>
+    
+  </head>
+  <body>
+    <div id="start-cont" class="start-container active-container">
+      <h1>Ahmed’s 🎲 Game</h1>
+      <button type="button"  id="play-btn" class="red-button">Play</button>
+    </div>
+
+    <div id="game-cont" class="game-container inactive-container">
+      <h1 id="message">Player 1 Turn</h1>
+      <div class="players">
+            <div class="player1">
+                <h2>Player 1 Score</h2>
+                <div id="player1Scoreboard">-</div>
+            </div>
+
+            <div class="player2">
+            <h2>Player 2 Score</h2>
+            <div id="player2Scoreboard">-</div>
+            </div>
+      </div>
+
+      <div class="dice-container">
+        <h2>Dice Roll</h2>
+        <div id="dice">-</div>
+      </div>
+      <button type="button" id="roll-btn" class="red-button" >Roll Dice</button>
+      <button type="button" id="reset-btn" class="red-button ">Reset Game</button>
+
+
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
